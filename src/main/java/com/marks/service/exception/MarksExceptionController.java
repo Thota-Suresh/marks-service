@@ -13,10 +13,6 @@ public class MarksExceptionController {
 		return new ResponseEntity<>(message.getMessage(), HttpStatus.BAD_REQUEST);
 	}
 
-	
-	@ExceptionHandler(NullPointerException.class)
-	public ResponseEntity<String> nullPointerExceptions(NullPointerException message) {
-		return new ResponseEntity<>(message.getMessage(), HttpStatus.BAD_REQUEST);
-	}
+	 
 	
 }
